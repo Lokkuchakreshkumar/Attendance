@@ -180,7 +180,7 @@ padding: 1rem;
 padding-top: 0.5rem;
 height: 5rem;
 margin-left: 5rem;
-margin-top: 10rem;
+margin-top: 3rem;
 background-color: inherit;
 border: 1px solid black;
 
@@ -191,6 +191,17 @@ border: 1px solid black;
 ::-webkit-scrollbar{
    display: none;
 }
+.note1{
+    width:38rem;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    height: 5rem;
+    margin-left: 5rem;
+    margin-top: 10rem;
+    background-color: inherit;
+    border: 1px solid black;
+    
+    }
 .contact-bg{
     margin-top: 10rem;
     width: 100vw;
@@ -251,7 +262,12 @@ border: 1px solid black;
   .note{
     width:20rem;
     height: auto;
-    
+    margin: 0 auto;
+    margin-top: 3rem;
+  }
+  .note1{
+    width:20rem;
+    height: auto;
     margin: 0 auto;
     margin-top: 10rem;
   }
