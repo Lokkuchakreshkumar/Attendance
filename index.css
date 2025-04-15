@@ -236,7 +236,7 @@ border: 1px solid black;
 .formail a{
     text-decoration: none;
 }
-@media only screen and (max-width:786px) and (min-width:300px){
+@media only screen and (max-width:786px){
     body{
        display: flex;
        flex-direction: column;
