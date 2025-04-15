@@ -7,13 +7,18 @@ let onemsg = document.querySelector("#onemsg");
 let secmsg = document.querySelector("#secmsg")
 btn.addEventListener("click",(event)=>{
     event.preventDefault();
+    onemsg.classList.remove("onemsg-style-positive");
+    onemsg.classList.remove("onemsg-style-negative");
+    secmsg.classList.remove("secmsg-style-positive");
+    secmsg.classList.remove("secmsg-style-negative");
+    
     let a = parseInt(class_attended.value); 
     let b = parseInt(total_classes.value);
 console.log(a);
 console.log(b);
     if (!isNaN(a) && !isNaN(b) && a >= 0 && b > 0 && a <= b) {
         let per = Math.ceil((a/b)*100);
-    zeromsg.innerText= `Your Present percentage is ${per}`
+    zeromsg.innerHTML= `<b>Your Present percentage is <span class="tobeunder">${per}</span></b>`
     let oneabsent = Math.ceil(((a-2)/b)*100);
     let twoabsent = Math.ceil(((a-4)/b)*100);
     if(oneabsent>85){

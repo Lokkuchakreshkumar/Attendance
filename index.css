@@ -4,10 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10rem;
+    overflow-x: hidden;
 }
 .nav{
     position: fixed;
@@ -60,6 +57,7 @@ body{
     font-size: 1.3rem; 
 }
 .container{
+    margin-top: 3rem;
     width: 50rem;
     min-height: 20rem;
     max-height: 60rem;
@@ -169,50 +167,72 @@ label{
     font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
 }
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-@media (max-width: 768px) {
-    .container {
-        width: 90%; /* Make the container take most of the screen width */
-        min-height: auto;
-        padding: 1rem;
-    }
+.note{
+width:38rem;
+padding: 1rem;
+padding-top: 0.5rem;
+height: 5rem;
+margin-left: 5rem;
+margin-top: 10rem;
+background-color: inherit;
+border: 1px solid black;
 
-    .form {
-        width: 100%;
-        gap: 0.5rem; /* Reduce spacing */
-    }
+}
+.note-text{
+    color: green;
+}
+::-webkit-scrollbar{
+   display: none;
+}
+.contact-bg{
+    margin-top: 10rem;
+    width: 100vw;
+    height: 15rem;
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
 
-    input {
-        width: 100%; /* Full width input fields */
-        padding: 1rem;
-    }
+.tobeunder{
+    text-decoration: underline;
+    font-size: 1.8rem;
+}
+#soem{
+    align-self: self-start;
+    margin-left: 1rem;
+}
+.kl-erp{
+    margin-top: 1.5rem;
+    color: black;
+    text-decoration: #54a0ff underline;
+    font-size: 1.2rem;
+}
+.kl-erp:hover{
+    font-size: 1.23rem;
+    text-decoration:#023779 underline;
+}
+.links{
+    display: flex;
+    font-size: 1.9rem;
+    margin-top: 2rem;
 
-    .btn {
-        width: 100%;
-        font-size: 1rem;
-    }
-
-    .onemsg-style-positive, .secmsg-style-positive {
-        width: 90%;
-        font-size: 1rem; /* Adjust font size for mobile */
-    }
-
-    .nav {
-        height: 3rem; /* Reduce navbar height */
-        font-size: 1rem;
-        padding: 0 1rem;
-    }
-
-    .nav-items {
-        font-size: 1rem;
-        margin-right: 1rem;
-    }
-
-    .logo {
-        margin-left: 1rem;
-    }
-
-    .Home {
-        margin-right: 2rem; /* Adjust spacing */
-    }
+}
+.fa-linkedin{
+    margin-right: 1rem;
+    color: #126BC4;
+}
+.formail{
+    margin-top: 2rem;
+}
+.formail a{
+    text-decoration: none;
 }
